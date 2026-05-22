@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOX Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌙 NOX Guide</h1>
+<p>Scopri Roma in modo semplice</p>
+
+<!-- NUOVA AGGIUNTA: Barra di ricerca in tempo reale -->
+<div class="search-container">
+<input type="text" id="searchBar" onkeyup="searchPlaces()" placeholder="🔍 Cerca un posto o una zona...">
+</div>
+</header>
+
+<div class="menu">
+<button onclick="showSection('night')">🍸 Nightlife</button>
+<button onclick="showSection('food')">🍕 Food</button>
+<button onclick="showSection('view')">🌇 View</button>
+<button onclick="showSection('study')">📚 Study</button>
+<button onclick="showSection('chill')">🌿 Chill</button>
+<button onclick="showSection('fun')">🎮 Fun</button>
+</div>
+
+<!-- NIGHTLIFE -->
+<div id="night" class="section">
+<h2>🍸 Nightlife</h2>
+<div class="card">
+<h3>Freni e Frizioni</h3>
+<p>📍 Trastevere</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Freni+e+Frizioni+Roma" target="_blank">Apri su Maps</a>
+</div>
+
+<div class="card">
+<h3>Ponte Milvio Bars</h3>
+<p>📍 Ponte Milvio</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Ponte+Milvio+Roma" target="_blank">Apri su Maps</a>
+</div>
+</div>
+
+<!-- FOOD -->
+<div id="food" class="section hidden">
+<h2>🍕 Food</h2>
+<div class="card">
+<h3>Pizza al Taglio</h3>
+<p>📍 Centro</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Bonci+Pizzarium+Roma" target="_blank">Apri su Maps</a>
+</div>
+
+<div class="card">
+<h3>Kebab San Lorenzo</h3>
+<p>📍 San Lorenzo</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Kebab+San+Lorenzo+Roma" target="_blank">Apri su Maps</a>
+</div>
+</div>
+
+<!-- VIEW -->
+<div id="view" class="section hidden">
+<h2>🌇 Viewpoints</h2>
+<div class="card">
+<h3>Gianicolo</h3>
+<p>📍 Trastevere</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Belvedere+del+Gianicolo+Roma" target="_blank">Apri su Maps</a>
+</div>
+
+<div class="card">
+<h3>Pincio</h3>
+<p>📍 Villa Borghese</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Terrazza+del+Pincio+Roma" target="_blank">Apri su Maps</a>
+</div>
+</div>
+
+<!-- STUDY -->
+<div id="study" class="section hidden">
+<h2>📚 Study</h2>
+<div class="card">
+<h3>Biblioteca Nazionale</h3>
+<p>📍 Centro</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Biblioteca+Nazionale+Centrale+di+Roma" target="_blank">Apri su Maps</a>
+</div>
+</div>
+
+<!-- CHILL -->
+<div id="chill" class="section hidden">
+<h2>🌿 Chill</h2>
+<div class="card">
+<h3>Villa Borghese</h3>
+<p>📍 Centro</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Roma" target="_blank">Apri su Maps</a>
+</div>
+</div>
+
+<!-- FUN -->
+<div id="fun" class="section hidden">
+<h2>🎮 Fun</h2>
+<div class="card">
+<h3>Bowling Roma</h3>
+<p>📍 EUR</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Bowling+Roma+Gruppo+Nazionale" target="_blank">Apri su Maps</a>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
